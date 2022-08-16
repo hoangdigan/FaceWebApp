@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block bodyblock %}
+    <div class="container">
+        <br>
+        <h3 class="content">Face Emotion Detecting Application</h3>
+
+        <p class="content">
+            This app is driven by data and machine learning model.<br>
+            All this functionality dumped in the flask app.
+        </p>
+        <br>
+
+        <div class="row">
+            <div class="col-md-9">
+                <img src="{{ url_for('static',filename='images/3.png') }}" alt="" width="600" height="200">
+                <br>
+            </div>
+            <div class="col-md-3">
+                <div>
+                    <a class="btn btn-primary" href="{{ url_for('emotion') }}">Try it now</a>
+                </div>
+            </div>
+        </div>
+       
+    </div>
+
+
+{% endblock  %}

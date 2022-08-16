@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{%block bodyblock %}
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-7">
+                    <br>
+                    <h3 class="content"> Welcome to <span style="color:#198b90">Face Emotion Detecting</span></h3>
+                    <br>
+                    <p class="index">
+                        Human facial expressions convey abundant information visually instead of vocally. Face expression recognition plays an important role within the world of human-machine interaction. Recognition of facial expression by computer with high recognition accuracy remains a challenging task.  
+                    </p>
+                    <p class="index">    
+                        FER is usually carried out in three stages involving face detection, feature extraction, and expression classification. In this work, we have used deep learning algorithm to identify the basic human emotions (e.g., anger, fear, neutral, happy, sad, surprise, etc.) on multiple datasets, including FER-2013 (Facial Expression Recognition 2013). The accuracy of our model, using CNN is <span color="red">89%</span> for FER 2013 dataset.
+                    </p>
+                </div>
+                <div class="col-md-5">
+                    <img src="{{ url_for('static',filename='images/home_image.jpg') }}" alt="" width="450" height="350">
+                </div>
+            </div>
+        </div>
+
+{% endblock  %}

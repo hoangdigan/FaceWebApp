@@ -1,0 +1,37 @@
+html *
+{
+   
+   color: steelblue;
+   font-family: 'Alike Angular';
+   font-size: 17px;
+}
+
+
+.content{
+    color: #002f4d;
+}
+
+.index {
+    text-align: justify;
+}
+
+span
+{
+    color: red;
+}
+
+.nav-link {
+    color: red !important;
+    font-size: 20px !important;
+    font-weight: bold !important;
+}
+
+img {
+    margin-top: 10px;
+}
+
+.nav-link:hover {
+    box-shadow: 5px 10px #888888;
+    transition: all .55s ease-in-out;
+  }
+
